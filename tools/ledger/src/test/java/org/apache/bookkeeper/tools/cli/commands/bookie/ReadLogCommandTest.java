@@ -26,6 +26,7 @@ import org.apache.bookkeeper.bookie.ReadOnlyDefaultEntryLogger;
 import org.apache.bookkeeper.bookie.storage.EntryLogScanner;
 import org.apache.bookkeeper.tools.cli.helpers.BookieCommandTestBase;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -33,6 +34,7 @@ import org.junit.Test;
  */
 public class ReadLogCommandTest extends BookieCommandTestBase {
 
+    @Before
     public ReadLogCommandTest() {
         super(3, 0);
     }

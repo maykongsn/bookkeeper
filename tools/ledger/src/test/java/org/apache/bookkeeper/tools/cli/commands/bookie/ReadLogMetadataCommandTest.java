@@ -29,6 +29,7 @@ import org.apache.bookkeeper.bookie.ReadOnlyDefaultEntryLogger;
 import org.apache.bookkeeper.tools.cli.helpers.BookieCommandTestBase;
 import org.apache.bookkeeper.util.collections.ConcurrentLongLongHashMap;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -38,6 +39,7 @@ public class ReadLogMetadataCommandTest extends BookieCommandTestBase {
 
     private EntryLogMetadata entryLogMetadata;
 
+    @Before
     public ReadLogMetadataCommandTest() {
         super(3, 0);
     }

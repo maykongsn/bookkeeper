@@ -32,6 +32,7 @@ import org.apache.bookkeeper.bookie.LedgerStorage;
 import org.apache.bookkeeper.conf.ServerConfiguration;
 import org.apache.bookkeeper.tools.cli.helpers.BookieCommandTestBase;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.mockito.MockedStatic;
 
@@ -41,6 +42,8 @@ import org.mockito.MockedStatic;
 public class LocalConsistencyCheckCommandTest extends BookieCommandTestBase {
 
     private LedgerStorage ledgerStorage;
+
+    @Before
     public LocalConsistencyCheckCommandTest() {
         super(3, 0);
     }

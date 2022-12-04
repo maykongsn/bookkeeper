@@ -31,6 +31,7 @@ import org.apache.bookkeeper.conf.ServerConfiguration;
 import org.apache.bookkeeper.tools.cli.helpers.BookieCommandTestBase;
 import org.apache.bookkeeper.util.DiskChecker;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 
@@ -39,6 +40,7 @@ import org.junit.Test;
  */
 public class ReadJournalCommandTest extends BookieCommandTestBase {
 
+    @Before
     public ReadJournalCommandTest() {
         super(3, 0);
     }
